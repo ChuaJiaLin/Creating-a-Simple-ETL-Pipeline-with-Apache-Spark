@@ -1,0 +1,49 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: etl_postgres
+    environment:
+      POSTGRES_USER: censo
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: censo_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  adminer:
+    image: adminer
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+
+  metabase:
+    image: metabase/metabase:latest
+    container_name: metabase-censo
+    ports:
+      - "3000:3000"
+    depends_on:
+      - postgres
+
+  spark:
+    image: apache/spark:3.5.1
+    container_name: etl_spark
+    depends_on:
+      - postgres
+    volumes:
+      - .:/app
+      - ./data:/app/data
+      - ./jars:/app/jars
+    working_dir: /app
+    command: >
+      bash -c "pip install psycopg2-binary -q --target /tmp/pypackages &&
+      PYTHONPATH=/tmp/pypackages
+      /opt/spark/bin/spark-submit
+      --jars /app/jars/postgresql.jar
+      /app/etl.py"
+
+
+
+volumes:
+  postgres_data:
