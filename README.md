@@ -46,8 +46,10 @@ Supports efficient analytical queries and BI reporting.
 - Tables include:
   - Dimension tables (e.g., dim_local, dim_in_internet)
   - Fact table with foreign key relationships
-    
-<img width="1212" height="255" alt="WhatsApp Image 2026-05-17 at 13 21 44" src="https://github.com/user-attachments/assets/1d645e0a-c3a3-4993-b3a9-ce0c9d3a588d" />
+<div align="center">    
+  <img width="800" height="600" alt="WhatsApp Image 2026-05-17 at 13 21 59" src="https://github.com/user-attachments/assets/dcf30cb9-becb-4c78-b909-89b64881e04c" />
+  <img width="800" height="600" alt="WhatsApp Image 2026-05-17 at 13 18 30" src="https://github.com/user-attachments/assets/e09b8c1f-600f-439e-95bd-ec45ddcf3bef" />
+</div>
 
 ### 5. Data Visualization
 - Built dashboard using Metabase
@@ -71,14 +73,15 @@ Supports efficient analytical queries and BI reporting.
 
 # 📈 Power BI Dashboard
 The dashboard displays:
-- Total products sold
-- Total sales revenue
-- Gender distribution
+- 📉 Enrollment trends (2010–2021)
+- 🌍 Geographical distribution of schools
+- 📊 Top 10 cities with most student enrollments
   
 <div align="center">
-  <img width="661" height="101" alt="spark pipeline drawio" src="https://github.com/user-attachments/assets/d01c20fd-915f-4b4e-ac35-c087d340240d" />
+  <img width="800" height="700" alt="WhatsApp Image 2026-05-17 at 13 25 43" src="https://github.com/user-attachments/assets/3dd3a6fe-5bb1-4332-a4c4-d2505534e470" />
 </div>
 
 <br>
 <br>
-📚 This project was created as part of my learning journey in cloud data engineering by following a <a href="https://www.youtube.com/watch?v=ygJ11fzq_ik">Youtube tutorial</a>.
+<br>
+📚 This project was created as part of my learning journey in big data engineering by following a <a href="https://joaopedro214.medium.com/creating-a-simple-etl-pipeline-with-apache-spark-825cc17c8cf6">Medium tutorial</a>.
