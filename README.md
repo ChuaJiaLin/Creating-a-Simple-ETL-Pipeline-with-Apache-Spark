@@ -81,6 +81,22 @@ The dashboard displays:
   <img width="800" height="700" alt="WhatsApp Image 2026-05-17 at 13 25 43" src="https://github.com/user-attachments/assets/3dd3a6fe-5bb1-4332-a4c4-d2505534e470" />
 </div>
 
+# Reflection
+This tutorial provided valuable practical experience in using Apache Spark, Docker, PostgreSQL, 
+and Metabases for building a complete ETL pipeline and performing data analytics. Besides, it 
+also enabled practical exposure with real-world data engineering tools and workflows, especially 
+in handling large-scale datasets and preparing the data for analytical reporting. 
+
+A key learning from this tutorial was the implementation of a star schema, including the creation 
+of dimension and fact tables using Python. This contributed a lot to the understanding of 
+multidimensional data modeling. 
+
+However, few issues were encountered during the tutorial, such as environment configuration 
+problems, difficulties in loading dimension tables into PostgreSQL, and challenges in configuring 
+referential integrity between dimension and fact tables. Apart from these challenges, this tutorial 
+enhanced the problem-solving skills in debugging ETL pipelines and strengthened the 
+understanding of end-to-end data engineering processes.
+
 <br>
 <br>
 <br>
